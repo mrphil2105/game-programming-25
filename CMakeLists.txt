@@ -7,7 +7,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(ARCH x64)
 
 # 3rd party libraries
-add_subdirectory(lib/SDL)
+find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
 
 # repo's executables
 add_subdirectory(examples)

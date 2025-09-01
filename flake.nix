@@ -9,7 +9,6 @@
       self,
       nixpkgs,
       flake-utils,
-      vscode-js-debug,
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
@@ -20,8 +19,15 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          buildInputs = [
+          nativeBuildInputs = [
             pkgs.cmake
+            pkgs.pkg-config
+          ];
+          buildInputs = with pkgs; [
+            cmake
+            gcc
+            pkg-config
+            sdl3
           ];
         };
       }
