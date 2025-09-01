@@ -3,5 +3,7 @@ build
 .vs
 .vscode
 .idea
+.direnv/
+.envrc
 
 CMakeSettings.json
