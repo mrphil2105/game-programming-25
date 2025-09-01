@@ -4,10 +4,11 @@ project(gp25_exercises)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-set(ARCH x64)
+FILE(COPY data DESTINATION ${CMAKE_BINARY_DIR})
 
 # 3rd party libraries
 find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
+include_directories(lib/stb)
 
 # repo's executables
 add_subdirectory(examples)
