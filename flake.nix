@@ -28,6 +28,7 @@
             gcc
             pkg-config
             sdl3
+            stb
           ];
         };
       }
