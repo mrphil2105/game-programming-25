@@ -1,7 +1,7 @@
 #include <SDL3/SDL.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include <stb/stb_image.h>
+#include <stb_image.h>
 
 // util macros (should be in in a common util file somewhere)
 #define NANOS(x)   (x)                // converts nanoseconds to nanoseconds

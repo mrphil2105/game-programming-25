@@ -19,16 +19,11 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          nativeBuildInputs = [
-            pkgs.cmake
-            pkgs.pkg-config
-          ];
           buildInputs = with pkgs; [
             cmake
             gcc
             pkg-config
             sdl3
-            stb
           ];
         };
       }
