@@ -9,6 +9,7 @@ FILE(COPY data DESTINATION ${CMAKE_BINARY_DIR})
 # 3rd party libraries
 find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
 add_subdirectory(lib/box2d)
+# changed imgui to be compiled as part of the game executable
 add_subdirectory(lib/imgui)
 
 # our libraries
